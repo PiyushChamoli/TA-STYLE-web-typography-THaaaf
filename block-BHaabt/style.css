@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom Style*/
+/*
+font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif;
+*/
+/*General*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1, h2, h3, h4{
+	font-family: 'DM Serif Display', serif;
+	color: #01122d;
+	line-height: 1.3;
+}
+a, p{
+	font-family: 'Karla', sans-serif;
+	line-height: 1.2;
+}
+.view-plans-button{
+	padding: 11px;
+	border-radius: 4px;
+	border: 1px solid #979797;
+	margin-left: 40px;
+}
+.upper{
+	width: 220px;
+	height: 2px;
+	background-color: #d4d4d4;
+}
+/*Header*/
+.header{
+	padding: 30px;
+}
+header h1{
+	color: #2d2640;
+	font-size: 35px;
+}
+.header-nav a{
+	text-decoration: none;
+	font-size: 19px;
+	text-transform: uppercase;
+	color: #6e6b74;
+	margin-left: 20px;
+	font-weight: 600;
+}
+
+/*Article 1*/
+
+.sec-one{
+	background-color: #2d2640;
+	height: 85vh;
+}
+.first-article{
+	flex: 0 1 50%;
+	align-self: flex-start;
+	padding-top: 100px;
+}
+.first-article h2{
+	font-size: 65px;
+	color: white;
+	padding-top: 30px;
+}
+.first-article p{
+	padding: 25px 0;
+	color: #c7c6c9;
+	font-size: 17px;
+}
+.sec-one .view-plans-button{
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	border-color: white;
+	margin: 20px 0;
+}
+.sec-one img{
+	flex: 0 1 40%;
+	padding-top: 90px;
+	padding-bottom: 30px;
+}
+
+/*Second article*/
+
+.sec-two{
+	margin-top: 200px;
+	padding-bottom: 60px;
+}
+.second-article{
+	flex: 0 1 50%;
+}
+.second-article h2{
+	font-size: 62px;
+}
+.second-article p{
+	padding: 25px 0;
+	color: #6e6b74;
+	font-size: 22px;
+}
+.sec-two .view-plans-button{
+	text-decoration: none;
+	display: inline-block;
+	color: #6e6b74;
+	border-color: #6e6b74;
+	margin: 20px 0;
+}
+.sec-two img{
+	flex: 0 1 40%;
+}
+
+/*Third article*/
+
+.col{
+	flex: 0 1 25%;
+}
+.sec-three h2{
+	font-size: 50px;
+	padding-bottom: 50px;
+    padding-top: 15px;
+}
+.sec-three h3{
+	font-size: 25px;
+	padding: 15px 0;
+}
+.sec-three p{
+	color: #6a6970;
+	font-size: 18px;
+	padding-bottom: 30px;
+}
+.col i{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	color: white;
+	background-color: #8ab4f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Fourth article*/
+
+.sec-four{
+	background-color: #2d2640;
+	margin: 40px 0;
+	padding: 40px;
+}
+.sec-four h2{
+	font-size: 45px;
+	color: white;
+	flex: 0 1 45%;
+}
+.sec-four .view-plans-button{
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	color: white;
+	border-color: white;
+	margin: 20px 0;
+}
+.sec-five h3{
+	font-size: 37px;
+	padding: 10px 0;
+}
+.sec-five .footer-link a{
+	text-decoration: none;
+	color: #6a6970;
+	font-size: 32px;
+	margin-left: 20px;
+}
+.footer-nav{
+	text-align: center;
+	padding: 20px;
+	border-top: 1px solid #979797;
+}
+.footer-nav a{
+	text-decoration: none;
+	text-align: center;
+	color: #6d6c73;
+	font-size: 20px;
+	margin-left: 25px;
+}
+
+footer{
+	background-color: #2d2640;
+	font-family: 'Karla', sans-serif;
+	text-align: center;
+	padding: 30px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #9195a8;
+}
